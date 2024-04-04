@@ -7,6 +7,13 @@ from scipy.ndimage import gaussian_filter, gaussian_filter1d, shift
     Helper class for calculating integration
 '''
 
+
+""" Convert phase variation increment (in degrees) to number of rows/columns cropped
+"""
+def degrees2crop(degrees_per_line, size=640):
+    overflow = size % (360 / degrees_per_line)
+    return int((360 / degrees_per_line) + overflow) if overflow != 0 else 0 
+
 # MLX two's complement function as found in the Python SDK
 def mlx_two_comp(phase_in):
     phase_tmp1 = phase_in.astype(np.uint16)
