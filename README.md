@@ -12,5 +12,6 @@ The Jupyter notebooks in the notebooks subdirectory provide sample code for test
 
 ## Proposed Technique
 
-![Our snapshot CWToF technique is inspired by off-axis holography](/figures/documentation/proposed_technique.png)
+![Our snapshot CWToF technique, inspired by off-axis holography, embeds a ToF hologram in the Fourier domain](/figures/documentation/proposed_technique.png)
+
 
